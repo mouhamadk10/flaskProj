@@ -1,33 +1,79 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
-<div class="jumbotron">
-    <h1>Mohamad Kaddour</h1>
-    <p class="lead">Flask is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Flask gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+<section class="hero">
+    <div>
+        <p class="kicker">Flask UI Kit</p>
+        <h1 class="hero-title">Ship fast with <span>clean</span> design.</h1>
+        <p class="hero-subtitle">
+            Opinionated starter template focused on speed, responsive behavior,
+            and delightful micro-interactions. Powered by Flask + Bootstrap.
         </p>
-        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="http://flask.pocoo.org/docs/" target="_blank" rel="noopener">Explore Docs</a>
+            <a class="btn btn-secondary" href="{{ url_for('contact') }}">Say Hello</a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
+    <div class="hero-metric">
+        <div class="metric-card">
+            <small>Get started in</small>
+            <h3>5 minutes</h3>
+            <p>Clone, install, and run with a single command.</p>
+        </div>
+        <div class="metric-card">
+            <small>Responsive</small>
+            <h3>100%</h3>
+            <p>Looks great on phones, tablets, and desktops.</p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+</section>
+
+<section class="feature-grid">
+    <article class="feature-card">
+        <h2>Ready Layouts</h2>
+        <p>Fresh navigation, hero, cards, and footer built with modern gradients and glassmorphism touches.</p>
+    </article>
+    <article class="feature-card">
+        <h2>Utility-first</h2>
+        <p>Minimal custom CSS that slots on top of Bootstrap so you keep everything familiar.</p>
+    </article>
+    <article class="feature-card">
+        <h2>Dark Mode Native</h2>
+        <p>Calm, high-contrast palette ensures your content stands out in any environment.</p>
+    </article>
+</section>
+
+<section class="stats-grid">
+    <div class="stat">
+        <strong>01</strong>
+        <span>Clone project</span>
     </div>
-</div>
+    <div class="stat">
+        <strong>02</strong>
+        <span>Install deps</span>
+    </div>
+    <div class="stat">
+        <strong>03</strong>
+        <span>Design faster</span>
+    </div>
+</section>
+
+<section class="info-sections">
+    <article class="info-card">
+        <small>SETUP</small>
+        <h3>Pure Flask</h3>
+        <p>Keep your stack lean with a lightweight server, templating, and static assets.</p>
+    </article>
+    <article class="info-card">
+        <small>RESOURCES</small>
+        <h3>Docs & Community</h3>
+        <p>Tap into the Flask docs plus thriving ecosystem of reusable extensions.</p>
+    </article>
+    <article class="info-card">
+        <small>SUPPORT</small>
+        <h3>Always Responsive</h3>
+        <p>Every component is crafted mobile-first so it feels intentional on any screen.</p>
+    </article>
+</section>
 
 {% endblock %}
