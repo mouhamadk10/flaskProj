@@ -65,3 +65,12 @@ def cache_test():
         return f"Redis Connected - Visit Count: {count}"
     except Exception as e:
         return f"Redis {str(e)}"
+
+@app.route('/hacker')
+def hacker():
+    """Renders the hacker page with my name."""
+    return render_template(
+        'hacker.html',
+        title='Hacker Page',
+        year=datetime.now().year,
+    )
